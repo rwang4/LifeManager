@@ -22,7 +22,9 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_note" />
+    <include
+        android:id="@+id/list_note"
+        layout="@layout/content_note" />
 
 
     <android.support.design.widget.FloatingActionButton
@@ -31,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:rippleColor="@color/colorSecond"
-        android:src="@drawable/ic_add_note"/>
+        android:src="@drawable/ic_add_note"
+        app:rippleColor="@color/colorSecond" />
 
 </android.support.design.widget.CoordinatorLayout>

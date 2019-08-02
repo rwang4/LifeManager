@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <ImageView
+        android:id="@+id/title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/title"
+        android:src="@drawable/ic_title" />
+
+    <EditText
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/title_icon"
+        android:layout_toRightOf="@+id/title_icon"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:padding="8dp"
+        tools:ignore="Autofill" />
+
+    <ImageView
+        android:id="@+id/calendar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/calendar"
+        android:src="@drawable/ic_calendar" />
+
+    <TextView
+        android:id="@+id/calendar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/calendar_icon"
+        android:layout_toRightOf="@+id/calendar_icon"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawableRight="@drawable/ic_edit"
+        android:drawablePadding="10dp"
+        android:focusable="true"
+        android:gravity="end"
+        android:onClick="onClick"
+        android:padding="8dp"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/reminder_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_icon"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/reminder"
+        android:src="@drawable/ic_alarm" />
+
+    <TextView
+        android:id="@+id/reminder_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/reminder_icon"
+        android:layout_toRightOf="@+id/reminder_icon"
+        android:padding="8dp"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/reminder_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp" />
+
+    <ImageView
+        android:id="@+id/description_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminder_icon"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/ic_plaintext" />
+
+
+    <EditText
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminder_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/description_icon"
+        android:layout_toRightOf="@+id/description_icon"
+        android:hint="@string/description"
+        android:inputType="text"
+        android:padding="8dp"
+        tools:ignore="Autofill" />
+
+</RelativeLayout>
